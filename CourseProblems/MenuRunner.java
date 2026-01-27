@@ -19,6 +19,7 @@ public class MenuRunner {
   public static int multiply(int num1, int num2) {
     return num1 * num2;
   }
+
   public static void main(String[] args) {
     System.out.print("Enter number 1: ");
     Scanner scanner = new Scanner(System.in);
@@ -57,20 +58,20 @@ public class MenuRunner {
   private static void calculationUsingSwitch(int number1, int number2, int choice) {
     switch (choice) {
       case 1:
-          System.out.println("Result is: " + add(number1, number2));
-          break;
+        System.out.println("Result is: " + add(number1, number2));
+        break;
       case 2:
-          System.out.println("Result is: " + add(number1, number2));
-          break;
+        System.out.println("Result is: " + add(number1, number2));
+        break;
       case 3:
-          System.out.println("Result is: " + divide(number1, number2));
-          break;
+        System.out.println("Result is: " + divide(number1, number2));
+        break;
       case 4:
-          System.out.println("Result is: " + multiply(number1, number2));
-          break;
+        System.out.println("Result is: " + multiply(number1, number2));
+        break;
       default:
-          System.out.println("Invalid choice");
-          break;
-      }
+        System.out.println("Invalid choice");
+        break;
     }
+  }
 }

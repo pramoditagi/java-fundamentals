@@ -4,7 +4,7 @@ public class MotorBike {
 
   // Constructor
   public MotorBike(int speed) {
-      this.speed = speed;
+    this.speed = speed;
   }
 
   // state
@@ -32,7 +32,7 @@ public class MotorBike {
   }
 
   void decreaseSpeed(int howMuch) {
-    if (speed-howMuch > 0) {
+    if (speed - howMuch > 0) {
       speed -= howMuch;
     }
   }

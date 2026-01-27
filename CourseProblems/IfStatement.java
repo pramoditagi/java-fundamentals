@@ -7,7 +7,7 @@ public class IfStatement {
     int c = 6;
     int d = 7;
 
-    if (a + b > c +d) {
+    if (a + b > c + d) {
       System.out.println("a + b is greater than c + d");
     } else {
       System.out.println("c + d is greater than a + b");

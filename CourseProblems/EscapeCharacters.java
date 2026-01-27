@@ -1,7 +1,7 @@
 package CourseProblems;
 
 public class EscapeCharacters {
-  
+
   public static void main(String[] args) {
     // Escape character using \
     System.out.println("Hello \"World");

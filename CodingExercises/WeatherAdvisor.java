@@ -1,7 +1,7 @@
 package CodingExercises;
 
 public class WeatherAdvisor {
-  public String provideWeatherAdvisory(int temperature) {
+    public String provideWeatherAdvisory(int temperature) {
         if (temperature < 0) {
             return "It's freezing! Wear a heavy coat.";
         } else if (temperature >= 0 && temperature <= 10) {

@@ -2,11 +2,11 @@ package CourseProblems;
 
 public class MultipleParameters {
   public static void main(String[] args) {
-      int total = sum(5, 3);
-      System.out.println("Total: "+total);
+    int total = sum(5, 3);
+    System.out.println("Total: " + total);
 
-      // Call method
-      sum(1, 2, 3);
+    // Call method
+    sum(1, 2, 3);
   }
 
   // Multiple parameters and return

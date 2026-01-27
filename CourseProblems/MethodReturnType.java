@@ -2,8 +2,8 @@ package CourseProblems;
 
 public class MethodReturnType {
   public static void main(String[] args) {
-      System.out.println(sumOfThreeNumbers(2, 3, 4));
-      System.out.println(findThirdAngle(60, 50));
+    System.out.println(sumOfThreeNumbers(2, 3, 4));
+    System.out.println(findThirdAngle(60, 50));
   }
 
   static int sumOfThreeNumbers(int num1, int num2, int num3) {
