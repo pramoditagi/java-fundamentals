@@ -30,13 +30,13 @@ public class BiNumber {
   }
 
   public static void main(String[] args) {
-      BiNumber biNumber = new BiNumber(2, 3);
-      System.out.println(biNumber.add());
-      System.out.println(biNumber.multiply());
+    BiNumber biNumber = new BiNumber(2, 3);
+    System.out.println(biNumber.add());
+    System.out.println(biNumber.multiply());
 
-      biNumber.doubleNumbers();
+    biNumber.doubleNumbers();
 
-      System.out.println(biNumber.getNumber1());
-      System.out.println(biNumber.getNumber2());
+    System.out.println(biNumber.getNumber1());
+    System.out.println(biNumber.getNumber2());
   }
 }

@@ -6,12 +6,12 @@ public class Country {
   }
 
   public static void main(String[] args) {
-      // Create objects
-      Country india = new Country();
-      Country usa = new Country();
+    // Create objects
+    Country india = new Country();
+    Country usa = new Country();
 
-      // Call method
-      india.comingSoon();
-      usa.comingSoon();
+    // Call method
+    india.comingSoon();
+    usa.comingSoon();
   }
 }

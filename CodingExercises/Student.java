@@ -1,7 +1,7 @@
 package CodingExercises;
 
 public class Student {
-  private int marks;
+    private int marks;
 
     public Student(int marks) {
         this.marks = marks;

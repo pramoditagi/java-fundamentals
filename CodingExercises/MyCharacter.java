@@ -3,12 +3,14 @@ package CodingExercises;
 public class MyCharacter {
 
   private char ch;
+
   public MyCharacter(char ch) {
     this.ch = ch;
   }
 
   boolean isVowel() {
-      return ch == 'a' || ch == 'A' || ch == 'e' || ch == 'e' || ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O' || ch == 'u' || ch == 'U';
+    return ch == 'a' || ch == 'A' || ch == 'e' || ch == 'e' || ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O'
+        || ch == 'u' || ch == 'U';
   }
 
   boolean isConsonant() {
@@ -36,15 +38,14 @@ public class MyCharacter {
       System.out.println(ch1);
     }
   }
-  
 
   public static void main(String[] args) {
-      MyCharacter myChar = new MyCharacter('J');
-      System.out.println(myChar.isVowel());
-      System.out.println(myChar.isConsonant());
-      System.out.println(myChar.isAlphabet());
-      System.out.println(myChar.isNumeric());
-      myChar.printLowerCaseAlphabets();
-      myChar.printUpperCaseAlphabets();
+    MyCharacter myChar = new MyCharacter('J');
+    System.out.println(myChar.isVowel());
+    System.out.println(myChar.isConsonant());
+    System.out.println(myChar.isAlphabet());
+    System.out.println(myChar.isNumeric());
+    myChar.printLowerCaseAlphabets();
+    myChar.printUpperCaseAlphabets();
   }
 }

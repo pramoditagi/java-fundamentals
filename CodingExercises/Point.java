@@ -1,7 +1,7 @@
 package CodingExercises;
 
 public class Point {
-  // x-coordinate of the point
+    // x-coordinate of the point
     private int x;
 
     // y-coordinate of the point
@@ -9,8 +9,8 @@ public class Point {
 
     // Constructor for the Point class
     public Point(int x, int y) {
-        this.x = x;  // Assigning x-coordinate of the point
-        this.y = y;  // Assigning y-coordinate of the point
+        this.x = x; // Assigning x-coordinate of the point
+        this.y = y; // Assigning y-coordinate of the point
     }
 
     public int getX() {

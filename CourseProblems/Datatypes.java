@@ -41,6 +41,6 @@ public class Datatypes {
     // boolean
     boolean bool = true;
     System.out.println("boolean: " + bool);
-    
+
   }
 }
