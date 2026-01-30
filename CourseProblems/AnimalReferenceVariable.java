@@ -9,10 +9,10 @@ public class AnimalReferenceVariable {
 
   public static void main(String[] args) {
     AnimalReferenceVariable dog = new AnimalReferenceVariable(10); // 10 gets stored for dog. It gets stored in heap but
-                                                                   // objct name dog is stored in stack referencing
+                                                                   // object name dog is stored in stack referencing
                                                                    // memory location of Animal10
     AnimalReferenceVariable cat = new AnimalReferenceVariable(12); // 12 gets stored for cat. It gets stored in heap but
-                                                                   // objct name cat is stored in stack referencing
+                                                                   // object name cat is stored in stack referencing
                                                                    // memory location of Animal12
     AnimalReferenceVariable ref = cat;
     AnimalReferenceVariable dog2 = new AnimalReferenceVariable(10);
@@ -30,7 +30,7 @@ public class AnimalReferenceVariable {
     System.out.println(nothing.id); // prints 10
     System.out.println(cat.id); // prints 10
 
-    // Note: Primitive variables stores values where as referece variables store
+    // Note: Primitive variables stores values where as reference variables store
     // memory location of the object where its actually created in heap
 
     // Compare

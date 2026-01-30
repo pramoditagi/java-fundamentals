@@ -27,7 +27,7 @@ public class PrintfFunction {
     // %f for floating point values
     System.out.printf("%f + %f = %f", 5.2, 5.1, 5.2 + 5.1).println();
 
-    // %.2f for floating point values upto 2 digits after decimal
+    // %.2f for floating point values up to 2 digits after decimal
     System.out.printf("%.2f + %.2f = %.2f", 5.2, 5.1, 5.2 + 5.1).println();
   }
 }

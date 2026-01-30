@@ -37,7 +37,7 @@ public class StringWrapper {
     // indexOf(value): Used to get index of the passed value. Value can be string or
     // character
     System.out.println(biggerString.indexOf("lot")); // 10 as l is present at index 10 and returns first index
-    System.out.println(biggerString.indexOf('i')); // 2 as it returns first occurance of character index
+    System.out.println(biggerString.indexOf('i')); // 2 as it returns first occurrence of character index
 
     // lastIndexOf(value): gets last index of passed character
     System.out.println(biggerString.lastIndexOf('e')); // 18 as it gets last index of passed character
@@ -71,7 +71,7 @@ public class StringWrapper {
 
     // equalsIgnoreCase(): This is used to check if 2 strings are equal or not.
     // It will ignore the case and compare.
-    // Behind the scenes, it converts both strings to upper case and comapares.
+    // Behind the scenes, it converts both strings to upper case and compares.
     // Returns true or false based on condition.
     System.out.println("true".equalsIgnoreCase("True"));
 
@@ -89,7 +89,7 @@ public class StringWrapper {
     System.out.println("  hello  ".trim());
 
     // join("delimiter", "string1", "string2" ..): This is used to join passed
-    // individual strings to make one sigle seperated by delimiter
+    // individual strings to make one single separated by delimiter
     System.out.println(String.join(",", "a", "b", "c"));
     // Note: If passed string is only 1, it will return same.
     System.out.println(String.join(",", "a"));
