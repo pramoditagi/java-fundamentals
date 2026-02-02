@@ -37,7 +37,5 @@ public class AnimalReferenceVariable {
     System.out.println(dog == cat); // false
     System.out.println(cat == ref); // true as they are pointing to same object
     System.out.println(dog == dog2); // false. Even though values are same, memory locations are different
-
   }
-
 }

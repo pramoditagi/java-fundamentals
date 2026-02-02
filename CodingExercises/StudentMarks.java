@@ -1,12 +1,17 @@
 package CodingExercises;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 
 public class StudentMarks {
 
   private String name;
-  private int[] listOfMarks;
+  // private int[] listOfMarks;
+  // Using ArrayList
+  private ArrayList<Integer> listOfMarks = new ArrayList<Integer>();
 
   // Normal way
   // StudentMarks(String name, int[] listOfMarks) {
@@ -17,11 +22,17 @@ public class StudentMarks {
   // using variable arguments
   StudentMarks(String name, int... listOfMarks) {
     this.name = name;
-    this.listOfMarks = listOfMarks;
+    this.listOfMarks = new ArrayList<Integer>();
+
+    for (int mark : listOfMarks) {
+      this.listOfMarks.add(mark);
+    }
   }
 
   int getNumberOfMarks() {
-    return listOfMarks.length;
+    // return listOfMarks.length;
+    // After changing to ArrayList, we need to use .size() instead of .length
+    return listOfMarks.size();
   }
 
   int getTotalSumOfMarks() {
@@ -33,18 +44,52 @@ public class StudentMarks {
   }
 
   int getMaximumMark() {
-    Arrays.sort(listOfMarks);
-    return listOfMarks[listOfMarks.length - 1];
+    // Commenting this as sort() doesn't accept ArrayList
+    // Arrays.sort(listOfMarks);
+    // return listOfMarks[listOfMarks.length - 1];
+
+    // Commenting as we are using collections
+    // int maximumMark = 0;
+    // for (int mark : listOfMarks) {
+    // if (mark > maximumMark) {
+    // maximumMark = mark;
+    // }
+    // }
+    // return maximumMark;
+    return Collections.max(listOfMarks);
   }
 
   int getMinimumMark() {
-    Arrays.sort(listOfMarks);
-    return listOfMarks[0];
+    // Commenting this as sort() doesn't accept ArrayList
+    // Arrays.sort(listOfMarks);
+    // return listOfMarks[0];
+
+    // Commenting as we are using collections
+    // int minimumMark = Integer.MAX_VALUE;
+    // for (int mark : listOfMarks) {
+    // if (mark < minimumMark) {
+    // minimumMark = mark;
+    // }
+    // }
+    // return minimumMark;
+    return Collections.min(listOfMarks);
   }
 
   BigDecimal getAverageOfMarks() {
     BigDecimal total = new BigDecimal(getTotalSumOfMarks());
     return total.divide(new BigDecimal(getNumberOfMarks()));
+  }
+
+  void addNewMarks(int mark) {
+    listOfMarks.add(mark);
+  }
+
+  void removeMarks(int index) {
+    listOfMarks.remove(index);
+  }
+
+  public String toString() {
+    return name + listOfMarks;
   }
 
   public static void main(String[] args) {
@@ -68,5 +113,12 @@ public class StudentMarks {
     BigDecimal average = studentMarks.getAverageOfMarks();
     System.out.println("Average marks: " + average);
 
+    System.out.println(studentMarks);
+
+    studentMarks.addNewMarks(67);
+    System.out.println("After adding new marks: " + studentMarks);
+
+    studentMarks.removeMarks(1);
+    System.out.println("After adding new marks: " + studentMarks);
   }
 }
