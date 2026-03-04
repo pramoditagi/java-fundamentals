@@ -69,5 +69,9 @@ public class Expressions {
     // the beginning first or on priority, then we can use brackets as expressions
     // in the brackets will be executed first irrespective of operator precedence
     // Example: (5 + 5) * 6
+
+    // Syntax: Rules. Programming languages have specific syntax for each of the
+    // instructions and we need to provide them as it is. Otherwise, system will
+    // thrown an error
   }
 }
