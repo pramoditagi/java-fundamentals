@@ -31,5 +31,12 @@ public class PrintStatements {
     // Below will print 5 * 2 = 10 in console as it is. It won't calculate as they
     // are enclosed in the double quotes as Strings.
     System.out.println("5 * 2 = 10");
+
+    // For expressions, space doesn't matter while calculating
+    // Even though it has space, it will still calculate as return result
+    System.out.println(3 * 4);
+
+    // For strings, space matters. It will provide the space during printing
+    System.out.println("Hello    World");
   }
 }
