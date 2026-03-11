@@ -31,5 +31,4 @@ public class WhileNumberPlayer {
     whileNumberPlayer.printSquaresUpToLimit();
     whileNumberPlayer.printCubesUpToLimit();
   }
-
 }
