@@ -41,12 +41,32 @@ public class MyChar {
     }
   }
 
+  public boolean isVowel(char ch) {
+    // Use a switch statement to check for each vowel, both lowercase and uppercase
+    switch (ch) {
+      case 'A':
+      case 'a':
+      case 'E':
+      case 'e':
+      case 'I':
+      case 'i':
+      case 'O':
+      case 'o':
+      case 'U':
+      case 'u':
+        return true;
+      default:
+        return false;
+    }
+  }
+
   public static void main(String[] args) {
     MyChar myChar = new MyChar('c');
     System.out.println(myChar.isVowel());
     System.out.println(myChar.isConsonant());
     System.out.println(myChar.isNumber());
     System.out.println(myChar.isAlphabet());
+    System.out.println(myChar.isVowel('A'));
     MyChar.printLowerCaseAlphabets();
     MyChar.printUpperCaseAlphabets();
   }
