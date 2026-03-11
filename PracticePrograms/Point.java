@@ -37,6 +37,5 @@ public class Point {
     p1.move(1, 1);
     double distance = p1.distanceTo(p2);
     System.out.println(distance);
-
   }
 }

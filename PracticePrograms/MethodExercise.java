@@ -67,6 +67,5 @@ public class MethodExercise {
     // Method to find 3rd angle
     // We can directly call a method inside print statement
     System.out.println(thirdAngle(90, 20));
-
   }
 }
