@@ -1,5 +1,6 @@
 package CoursePrograms;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArraysIntroduction {
@@ -292,6 +293,89 @@ public class ArraysIntroduction {
      * 
      * int[] newArray = new int[marks.length + 2]; -> Size gets created
      * 
+     * That's why ArrayLists are introduced which can be used to add an element or
+     * remove an element from an array
+     * 
+     * ArrayList:
+     * ArrayList are from java.util package. They are resizable, dynamic arrays can
+     * be used to used to add an element or remove an element from an array.
+     * 
+     * Syntax:
+     * ArrayList arraylist = new ArrayList()
+     * 
+     * add(value): This is used to add an element into an arrayList
+     * 
+     * Example:
+     * // Add an element
+     * arrayList.add(12)
+     * arrayList.add(34)
+     * arrayList.add(56)
+     * 
+     * remove(value): This is used to remove an element from an arrayList. Here we
+     * can pass value directly or pass an index too
+     * 
+     * Example:
+     * arrayList.remove(2) -> Index
+     * arrayList.remove(34) -> Value
+     * 
+     * Print arrayList:
+     * System.out.println(arrayList.toString());
      */
+
+    // Declaration of ArrayList
+    ArrayList arrayList = new ArrayList();
+
+    // Adding an element
+    arrayList.add(20);
+    arrayList.add(30);
+    arrayList.add(12);
+    arrayList.add("12");
+    arrayList.add('c');
+    arrayList.add(true);
+
+    // Printing ArrayList
+    System.out.println(arrayList.toString()); // [20, 30, 12, 12, c, true]
+
+    // Remove an element:
+    arrayList.remove(true);
+    System.out.println(arrayList.toString()); // [20, 30, 12, 12, c]
+
+    /*
+     * Note: Right now, it's accepting all types of elements like number, Strings,
+     * character, boolean etc. It's not a best practice
+     * 
+     * Also, it will cause an issue while iterating as they are different types
+     * 
+     */
+
+    /*
+     * We need to specify the type while declaring arrayList
+     * Example:
+     * For Strings:
+     * ArrayList<String> arrayList = new ArrayList<String>();
+     * 
+     * now with this, we can add only String elements:
+     * 
+     * arrayList.add("abc") -> Works
+     * arrayList.add(2) -> Error as 2 is of type Integer
+     * 
+     * For Integer:
+     * ArrayList<Integer> arrayList = new ArrayList<Integer>();
+     * 
+     * For Boolean:
+     * ArrayList<Boolean> arrayList = new ArrayList<Boolean>();
+     */
+
+    ArrayList<String> arrayList1 = new ArrayList<String>();
+    arrayList1.add("apple");
+    arrayList1.add("banana");
+    System.out.println(arrayList1.toString());
+    // arrayList1.add(3); error
+
+    // Integer
+    ArrayList<Integer> arrayList2 = new ArrayList<Integer>();
+    arrayList2.add(1);
+    arrayList2.add(2);
+    System.out.println(arrayList2.toString());
   }
 }

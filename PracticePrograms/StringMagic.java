@@ -49,6 +49,22 @@ public class StringMagic {
     return -1;
   }
 
+  public String findLongestWord(String sentence) {
+    if (sentence.isEmpty()) {
+      return "";
+    }
+
+    String[] newSentence = sentence.trim().split(" ");
+
+    String longest = "";
+    for (String word : newSentence) {
+      if (word.length() > longest.length()) {
+        longest = word;
+      }
+    }
+    return longest;
+  }
+
   public static void main(String[] args) {
     StringMagic stringMagic = new StringMagic();
     int uppercaseLetters = stringMagic.countUppercaseLetters("Hello WORLd");
