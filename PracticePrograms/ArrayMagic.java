@@ -114,3 +114,4 @@ public class ArrayMagic {
     System.out.println(Arrays.toString(am.reverseArray(new int[] { 1, 2, 10, 4, 3 })));
   }
 }
+
